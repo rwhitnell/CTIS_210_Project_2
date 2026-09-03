@@ -1,0 +1,266 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 5,
+  "metadata": {
+    "language_info": {
+      "name": "java"
+    }
+  },
+  "cells": [
+    {
+      "id": "efc2d589-9556-4710-a5a3-7842e3b13146",
+      "cell_type": "markdown",
+      "source": "#### CTIS 210 Project 2\n\nThis project focuses on the work we've done in the following two activities.\n\n* Kinds of Numbers and Arithmetic Operators\n* Data Types\n\nYou will use the following concepts from previous projects and activities.\n\n* Declaring and initializing variables\n    * That includes using an appropriate type and identifier\n* Assigning a new value to a variable\n\nYou will do the following in this project.\n\n* Use arithmetic operators to perform mathematical operations\n* Manipulate strings using operators that act on a `String` object\n* Read text information from the user that can be used as text or converted into numbers\n* Investigate how a color can be represented in Java\n* Draw some objects with colors you specify",
+      "metadata": {
+        "language": "markdown",
+        "id": "efc2d589-9556-4710-a5a3-7842e3b13146"
+      }
+    },
+    {
+      "id": "43f60fcf-6b25-4a51-a8a4-e0c06c69e285",
+      "cell_type": "markdown",
+      "source": "##### One item before you start\n\nLook at the top of this window and find the buttons named\n\n* Clear All Outputs\n* Restart\n\nWhenever working on a notebook, if you run into a place where you want to have all the code run again from the very beginning, click those two buttons in order. You'll need to confirm the Restart.\n\nIf you still have problems after doing that, commit and sync your notebook and email me with a description of what's not working.",
+      "metadata": {
+        "language": "markdown",
+        "id": "43f60fcf-6b25-4a51-a8a4-e0c06c69e285"
+      }
+    },
+    {
+      "id": "33558d51-805d-4d02-bb2c-374759eea153",
+      "cell_type": "markdown",
+      "source": "##### Task: Variable declaration\n\nIn the code cell below, declare the following variables using the correct type and the specified integer. Just declare them; don't initialize them\n\n* A `String` variable with an identifier appropriate for storing your G number.\n* Three integer variables with the following identifiers\n    * `firstTwo`\n    * `secondTwo`\n    * `thirdTwo`\n* Three integer variables with the following identifiers\n    * `red`\n    * `green`\n    * `blue`\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "33558d51-805d-4d02-bb2c-374759eea153"
+      }
+    },
+    {
+      "id": "a7f6054f-926e-456e-a389-6fbb926f3f48",
+      "cell_type": "code",
+      "source": "// Add code for the task here. \n\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "8a255326-fb28-4bf8-b836-a5f6f8760470",
+      "cell_type": "markdown",
+      "source": "##### Task: Value assignment\n\nNow use the code cell below to do the following assignments:\n\n* Assign the value of your G number to the `String` variable you declared.\n* Your G number start with G00 followed by six digits. You'll use those six digits to make the following assigments\n    * `firstTwo` will be assigned the integer corresponding to the first two digits.\n    * `secondTwo` will be assigned the integer corresponding to the second two digits.\n    * `thirdTwo` will be assigned the integer corresponding to the third two digits.\n\n    For example, if your G number was G00843759, `firstTwo` should be assigned 84, and so on.\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "8a255326-fb28-4bf8-b836-a5f6f8760470"
+      }
+    },
+    {
+      "id": "6a38c349-9eac-48f1-8a56-4c0f1d3328e5",
+      "cell_type": "code",
+      "source": "// Add code for the task here. \n\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "3d554b0f-897b-471d-ba95-7fda95e718b1",
+      "cell_type": "markdown",
+      "source": "##### Task: Arithmetic operations\n\nIn the next code cell:\n\n* Write a statement that assigns the result of the following arithmetic operations to `firstTwo`\n    * Multiply `firstTwo` by 2 and add any value you want between 1 and 50.\n* Then do the same for `green` and `blue` using `secondTwo` and `thirdTwo`. \n\nAnd now you've defined your unique color.\n\n* Use one or more `System.out.println` statements to display the values of `red`, `green`, and `blue` in a form like:\n\n```java\n    red = 209\n    green = 79\n    blue = 145\n```\n\n\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "3d554b0f-897b-471d-ba95-7fda95e718b1"
+      }
+    },
+    {
+      "id": "d9e4fa68-6a13-4c2c-876e-e5f788957f80",
+      "cell_type": "code",
+      "source": "// Add code for the task here. \n\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "3d1029cf-68f3-4b09-b2b6-2624f9ef0e34",
+      "cell_type": "markdown",
+      "source": "##### How are these three numbers a color?\n\nOne way we can define a color is by breaking it down into the amount of red, green, and blue it has. In what is known as the ***24-bit RGB color model***, we assign 8 bits to red, 8 bits to green, and 8 bits to blue.\n\nAnswer the following questions in the next descriptive cell. \n\n1. How many different pieces of information can we represent with 8 bits? These will now be shades of red, green, or blue that are in our color.\n2. If those pieces of information are positive integers, what is the largest integer we can represent (with 0 being the lowest)? Are any of your values of red, green, or blue larger than that value?\n3. How many different colors can the 24-bit RGB model represent? Don't just give a number; explain how you arrived at that number.\n4. Describe the unique color you calculated above in terms of how much red, green, and blue it contains. For the color in the example, we could write \"A lot of red, a much smaller amount of green, and an amount of blue that falls in-between.",
+      "metadata": {
+        "language": "markdown",
+        "id": "3d1029cf-68f3-4b09-b2b6-2624f9ef0e34"
+      }
+    },
+    {
+      "id": "21bbcb18-68a3-4e4c-9fff-e95acd957c1b",
+      "cell_type": "markdown",
+      "source": "##### Add your answers to the questions here.\n1. \n2. \n3. \n4. ",
+      "metadata": {
+        "language": "markdown",
+        "id": "21bbcb18-68a3-4e4c-9fff-e95acd957c1b"
+      }
+    },
+    {
+      "id": "debd0a92-7954-4413-b1d3-f1871fcade2c",
+      "cell_type": "markdown",
+      "source": "##### Our first example of magic code\n\nThe following two code cells contain what I call \"magic code\". That is code that does something useful, but we haven't discussed yet how it works. By the end of the semester, you will know how all the magic code works. For now, you'll be able to observe what it does.\n\nThe next two cells contain magic code that create a window and draw a small square filled with your unique color. \n\nDefinitely run these two cells to see what they do, but don't modify the code in any magic code cell until you're directed to do so.",
+      "metadata": {
+        "language": "markdown",
+        "id": "debd0a92-7954-4413-b1d3-f1871fcade2c"
+      }
+    },
+    {
+      "id": "c85c2ddb-0bd9-4d81-8230-8ac463bdff97",
+      "cell_type": "code",
+      "source": "// Magic code: Draw a square in your unique color\n// Do not change this code. We'll do more graphics later in the project.\nimport java.awt.Graphics2D;\nimport java.awt.Color;\n\npublic void makeADrawing(Graphics2D g2d) {\n    Color myColor = new Color(red, green, blue);\n    g2d.setColor(myColor);\n    g2d.fillRect(50, 50, 150, 150);\n}",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "85eaa0eb-775c-47b5-b156-edf5efbe3641",
+      "cell_type": "code",
+      "source": "// Magic code: Create a window and the tools for drawing\n// We will work on what all this code means later in the semester\n// Do not change the code in this cell!\n\nimport java.awt.Dimension;\nimport java.awt.Color;\nimport java.awt.Graphics;\nimport javax.swing.JPanel;\nimport javax.swing.JFrame;\npublic class DrawingPanel extends JPanel {\n    public void paintComponent(Graphics g) {\n        System.out.println(g);\n        super.paintComponent(g);\n        Graphics2D g2d = (Graphics2D)g;\n        makeADrawing(g2d);\n    }\n}\n\nJFrame project2Window = new JFrame(\"Project 2\");\nDrawingPanel myDrawingPanel = new DrawingPanel();\nmyDrawingPanel.setPreferredSize(new Dimension(600, 600));\nproject2Window.getContentPane().add(myDrawingPanel);\nproject2Window.pack();\nproject2Window.setVisible(true);\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "849cbda0-81b9-417f-b424-27483591bf75",
+      "cell_type": "markdown",
+      "source": "##### Task: Getting information from the user\n\nIn the Data Types activity, you learned about the `Scanner` class to obtain information from the user. Review that material and Section 3.2 of your textbook before continuing.\n\nThe following code cell declares and instantiates a `Scanner` object for you to use.\n\nUse that object to read three positive integers from the user and store them in variables named `userRed`, `userGreen`, and `userBlue`. (There will be a problem if the user enters a negative number of a number greater than 255, so we want to tell them not to.)\n\nDoing that for `userRed` is shown for you.\n\nAnd for the final code to add, print out the values with annotation to verify what the user entered.\n\nFinally, run the next code cell to see two squares, one in your unique color, and one in the user's color.\n\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "849cbda0-81b9-417f-b424-27483591bf75"
+      }
+    },
+    {
+      "id": "41d882df-aabd-42c8-9cfd-e5ce6e8d7d30",
+      "cell_type": "code",
+      "source": "// Declare a Scanner object\nScanner scan = new Scanner(System.in);\nSystem.out.println(\"Enter the red value (0-255):\");",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "6146e6ff-4738-44e9-9864-69245885967d",
+      "cell_type": "code",
+      "source": "// Magic code: Draw two squares, one in your unique color and one in the user's color\n// Do not change this code.\n\nSystem.out.println(\"Now look at the window to see a square with the user's color!\");\n\npublic void makeADrawing(Graphics2D g2d) {\n    Color myColor = new Color(red, green, blue);\n    g2d.setColor(myColor);\n    g2d.fillRect(50, 50, 150, 150);\n    Color userColor = new Color(userRed, userGreen, userBlue);\n    g2d.setColor(userColor);\n    g2d.fillRect(250, 250, 200, 200);\n}\nmyDrawingPanel.repaint();\n// This line of code avoids a Scanner problem a little later\nscan.nextLine();",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "15f49b20-8f72-4a82-88d9-d8909f84b219",
+      "cell_type": "markdown",
+      "source": "##### Task: Getting additional information from the user and using `String` operators\n\nLet's ask the user for their name and G number. We do that with the `nextLine()` behavior of the `String` class as we saw in the Data Types activity.\n\nWrite code that asks the user for their name and G number and stores that information into `String` variables named `userName` and `userGnumber`.\n\nThen display what the user entered.\n\n* Write a line of code that displays the length of the `userGnumber` string so that you can verify it contains nine characters. (Recall how we found the length of the character sequence in a `String` object in the Data Types activity.)",
+      "metadata": {
+        "language": "markdown",
+        "id": "15f49b20-8f72-4a82-88d9-d8909f84b219"
+      }
+    },
+    {
+      "id": "b931e2ec-49ff-4c9e-9075-76d7b120bfd8",
+      "cell_type": "code",
+      "source": "// Add code for the task here. \n\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "fe607ced-cd73-4ee5-bb3a-6404f4eb1755",
+      "cell_type": "markdown",
+      "source": "##### Continuing the task\n\nBefore doing the rest of this section, read Sections 6.8 and 6.9 of your textbook. \n\nA `String` contains an indexed sequence of characters. The first character in the sequence is given the index 0, the second character 1, and so on. So if the string `gNumber` contains the characters \"G00843759\", then the first 0 has index 1, the second 0 has index 0, and the 9 at the end has index 8.\n\nThe `substring` behavior of the `String` variable allows us to extract a set of characters from the string. If we write\n\n```java\nString firstDigits = gNumber.substring(3, 5);\n```\n\n`firstDigits` will contain the character sequence \"84\". (When we use `substring` here, the 3 refers to the first index we want, and the 5 is one past the last index we want.)\n\nWe'll now use this information to convert the color the user entered into a third color.\n\nUsing the pattern shown for `firstDigits`, use `substring` in three lines of code to extract the first two non-zero digits into `firstDigits`, the second two into `secondDigits` and the last two into `thirdDigits`. Display the values of each of those three variables to verify that your code worked.\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "fe607ced-cd73-4ee5-bb3a-6404f4eb1755"
+      }
+    },
+    {
+      "id": "edeb5b45-8bdd-4603-8f4e-fd98219c8c83",
+      "cell_type": "code",
+      "source": "String firstDigits = userGnumber.substring(3, 5);\nSystem.out.println(firstDigits);\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "3faa2fa5-cb0a-47a7-bfd0-f022b7206255",
+      "cell_type": "markdown",
+      "source": "##### Continuing the task\n\nWe now want to turn those `String` objects that contain digits into actual integers. We'll use a little magic code called `Integer.parseInt` to do that. \n\nFor example, if we have\n\n```java\nString ourDigits = \"123\";\nint ourNumber = Integer.parseInt(ourDigits);\nSystem.out.println(\"The number is \" + ourNumber * 2);\n```\n\nthen the number printed out will be 246. (Try that code in a code cell if you don't believe me.)\n\nSo your task is to create three new integer variables, `userGRed`, `userGGreen`, and `userGGblue` that contain the integers corresponding to `firstDigits`, `secondDigits`, and `thirdDigits`, but multiplied by 2 and a number between 0 and 50 added.\n\nI've given you the first line as an example.\n\nFinish this part by printing out the values of `userGRed`, `userGGreen`, and `userGGblue`.",
+      "metadata": {
+        "language": "markdown",
+        "id": "3faa2fa5-cb0a-47a7-bfd0-f022b7206255"
+      }
+    },
+    {
+      "id": "a89872ab-1c2a-42ac-aab1-4d3829730b1e",
+      "cell_type": "code",
+      "source": "int userGRed = Integer.parseInt(firstDigits) * 2 + 41;\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "92713f73-11ee-4236-993b-2262d16ea8e8",
+      "cell_type": "markdown",
+      "source": "##### Continuing the task\n\nRun the following code cell to show that you have three squares in three different colors.",
+      "metadata": {
+        "language": "markdown",
+        "id": "92713f73-11ee-4236-993b-2262d16ea8e8"
+      }
+    },
+    {
+      "id": "572c1ca1-88c8-4038-907d-5646478c2e4f",
+      "cell_type": "code",
+      "source": "// Magic code: Draw three squares, one in your unique color and one in the user's color\n// and one in the user's Gnumber color\n// Do not change this code.\n\npublic void makeADrawing(Graphics2D g2d) {\n    Color myColor = new Color(red, green, blue);\n    g2d.setColor(myColor);\n    g2d.fillRect(50, 50, 150, 150);\n    Color userColor = new Color(userRed, userGreen, userBlue);\n    g2d.setColor(userColor);\n    g2d.fillRect(250, 250, 200, 200);\n    Color userGColor = new Color(userGRed, userGGreen, userGBlue);\n    g2d.setColor(userGColor);\n    g2d.fillRect(250, 50, 100, 100);\n    Color textColor = new Color(250, 75, 100);\n    g2d.setColor(textColor);\n    g2d.drawString(\"Hello, \" + userName +  \"! \" +\n         \"Your G number is \" + userGnumber + \".\", 50, 25);\n\n}\nmyDrawingPanel.repaint();",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "0f76d159-239b-482f-903b-1b37f0eb48b5",
+      "cell_type": "markdown",
+      "source": "##### Task: Drawing objects on the screen\n\nLet's look at the above code cell that draws three squares in three different positions on the screen with three different sizes and three different colors. And it now draws some characters as well. Let's take this code apart.\n\n* Setting the color to be used for drawing.\n\n    There are three places where we see code that looks like:\n    \n    ```java\n        Color myColor = new Color(red, green, blue);\n        g2d.setColor(myColor);\n    ```\n\n    The first line of code creates a `Color` object that has specified red, green, and blue values. The second line of code tells the graphics to use that color for whatever it draws next. We can type in the numbers directly, like when we define the color for the text, or we can use variables.\n\n    **Before continuing**, change the values for the text color in the above code cell to something you like. Be sure that all values are between 0 and 255.\n\n* Drawing a square\n\n    Now let's look at the line which draws the third square:\n\n    ```java\n        g2d.fillRect(250, 50, 100, 100);\n    ```\n\n    `fillRect` means \"draw a filled rectangle in the current color\". It needs four values: the coordinates of the upper left corner, the width, and the height.\n\n    The first number is the x value, or the number of pixels from the left that the drawing starts. The second number is the y value, or the number of pixels from the top that the drawing starts. The last two numbers are the width and the height. When those two values are the same, we get a square.\n\n    **Before continuing**, change each square so that it's in a different position and has a different size. Turn at least one of the squares into a rectangle.\n\n* Displaying text\n\n    The line that begins with `g2d.drawString` draws text in a standard font. It requires a string and where the string should be drawn.\n\n    **Before continuing**, try changing both the string that's displayed and the position. Make sure the user's name and G number is still displayed.\n\n    ***Optional***: Research how to display the string in a different font and size.\n\nWhen you're confident with these steps, continue to the next cell for the final task for this project.",
+      "metadata": {
+        "language": "markdown",
+        "id": "0f76d159-239b-482f-903b-1b37f0eb48b5"
+      }
+    },
+    {
+      "id": "d59b4927-7ee1-486c-b334-231c8ae162ba",
+      "cell_type": "markdown",
+      "source": "##### Final task: Building your own drawing with more kinds of objects.\n\nThe last code cell uses `fillRect` to draw filled rectangles and `drawString` to display text. There are other shapes we can draw as well.\n\n* `drawRect` draws an outline rectangle instead of a filled rectangle.\n* `fillOval` and `drawOval` draw ovals instead of rectangles. The four pieces of information needed are the same. If the width and height are the same values, you'll get a circle.\n* `drawLine` draws a line. It needs two values that say where the line starts and two values that say where the line ends.\n\nThere are other options you can research.\n\nHere's the task. The following code cell draws a single rectangle. You should now modify that code to create your own drawing that displays at least six objects using at least a couple different shapes and at least two strings. Also use more than one color. Consider what you might want to draw and how you can accomplish that. ",
+      "metadata": {
+        "language": "markdown",
+        "id": "d59b4927-7ee1-486c-b334-231c8ae162ba"
+      }
+    },
+    {
+      "id": "b2b47086-3807-467f-9282-c79977c4a322",
+      "cell_type": "code",
+      "source": "// Magic code: Make your own drawing\n// Do not change this code.\n\npublic void makeADrawing(Graphics2D g2d) {\n    // You can change and add code below this line\n    Color myColor = new Color(red, green, blue);\n    g2d.setColor(myColor);\n    g2d.fillRect(50, 50, 150, 150);\n\n    // You can change and add code above this line\n}\nmyDrawingPanel.repaint();",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
